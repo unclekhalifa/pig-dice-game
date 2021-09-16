@@ -1,3 +1,6 @@
+const player = require("./player");
+const game = require("./game");
+
 document.addEventListener("DOMContentLoaded", () => {
     const $newGameButton = document.getElementById("newGame");
 

@@ -28,3 +28,7 @@ const game = {
         }
     }
 };
+
+try {
+    module.exports = game;
+} catch (e) {}
