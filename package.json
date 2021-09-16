@@ -7,7 +7,7 @@
     "dev-server": "webpack-dev-server",
     "build-prod": "webpack --env production",
     "build-dev": "webpack --env development",
-    "test": "jest --watch"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
