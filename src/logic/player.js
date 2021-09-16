@@ -74,6 +74,7 @@ const utils = {
     }
 };
 
-try {
-    module.exports = player;
-} catch (e) {}
+module.exports = player;
+// try {
+//     module.exports = player;
+// } catch (e) {}

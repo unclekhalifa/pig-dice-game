@@ -29,6 +29,7 @@ const game = {
     }
 };
 
-try {
-    module.exports = game;
-} catch (e) {}
+module.exports = game;
+// try {
+//     module.exports = game;
+// } catch (e) {}
