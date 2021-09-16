@@ -1,4 +1,4 @@
-const player = require("../logic/player");
+const player = require("../model/player");
 
 describe("Tests to check player functionality", () => {
 

@@ -10,7 +10,6 @@ const game = {
     handleRoll: function (player, playerName) {
         player.rollDice();
         player.updateScoreStatus();
-        player.checkIfWon();
         document.querySelector(`#${playerName} .rollTotal`).innerHTML = player.score;
         document.querySelector(`#${playerName} .singleRoll`).innerHTML = player.getTotalRoll();
     },
