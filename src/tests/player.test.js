@@ -36,7 +36,7 @@ describe("Tests to check player functionality", () => {
 
     test("Should set score to 69 when user rolls a 9", () => {
         const player1 = {...player};
-        player1.initialise();
+        player1.initialise(true, "Ada");
         player1.score = 60;
 
         player1.roll = [5, 4];
@@ -48,7 +48,7 @@ describe("Tests to check player functionality", () => {
 
     test("Should set win to true when player reaches 100", () => {
         const player1 = {...player};
-        player1.initialise();
+        player1.initialise(true, "Lovelace");
         player1.score = 95;
 
         player1.roll = [3, 2];
