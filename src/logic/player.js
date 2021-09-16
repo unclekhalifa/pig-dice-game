@@ -7,6 +7,7 @@ const player = {
     turn: false,
     totalScore: 0,
     playerName: "",
+    won: false,
 
     initialise: function (turn, playerName) {
         this.turn = turn;
@@ -37,6 +38,7 @@ const player = {
         }
 
         this.score += this.getTotalRoll();
+        this.checkIfWon();
         return false;
     },
 
@@ -48,7 +50,10 @@ const player = {
     },
 
     checkIfWon: function () {
-        if (this.totalScore >= 100) utils.displayAlert(`${this.playerName} won!`);
+        if (this.totalScore >= 100 || this.score >= 100) {
+            utils.displayAlert(`${this.playerName} won!`);
+            this.won = true;
+        }
     },
 
     resetGame: function () {

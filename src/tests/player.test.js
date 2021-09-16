@@ -45,4 +45,16 @@ describe("Tests to check player functionality", () => {
         expect(player1.score).toBe(69);
         expect(player1.totalScore).toBe(0); // No existing score yet
     });
+
+    test("Should set win to true when player reaches 100", () => {
+        const player1 = {...player};
+        player1.initialise();
+        player1.score = 95;
+
+        player1.roll = [3, 2];
+        player1.updateScoreStatus();
+
+        expect(player1.score).toBe(100);
+        expect(player1.won).toBe(true);
+    });
 });
