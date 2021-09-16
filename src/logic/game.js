@@ -30,6 +30,3 @@ const game = {
 };
 
 module.exports = game;
-// try {
-//     module.exports = game;
-// } catch (e) {}

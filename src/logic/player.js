@@ -1,3 +1,5 @@
+const utils = require("./utils");
+
 const player = {
 
     roll: [0, 0],
@@ -42,7 +44,7 @@ const player = {
         this.totalScore += this.score;
         this.score = 0;
         this.roll = [0, 0];
-        utils.displayAlert(`${this.playerName} has passed turn`);
+        utils.displayAlert(`${this.playerName} has passed turn to the next player`);
     },
 
     checkIfWon: function () {
@@ -64,17 +66,4 @@ const player = {
     }
 };
 
-const utils = {
-    displayAlert: function (message) {
-        try {
-            alert(message);
-        } catch (error) {
-            console.log(message);
-        }
-    }
-};
-
 module.exports = player;
-// try {
-//     module.exports = player;
-// } catch (e) {}
