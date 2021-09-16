@@ -1,5 +1,4 @@
-$(() => {
-
+document.addEventListener("DOMContentLoaded", () => {
     const $newGameButton = document.getElementById("newGame");
 
     const $player1RollButton = document.querySelector("#player1 .rollButton");
